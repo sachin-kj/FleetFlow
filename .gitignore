@@ -1,0 +1,25 @@
+node_modules/
+.env
+.env.local
+dist/
+build/
+*.log
+.DS_Store
+.idea/
+.vscode/
+
+# Environment variables and secrets
+.env.*
+!.env.example
+
+# Dependencies and generated files
+node_modules/
+coverage/
+.vite/
+
+# Build files
+dist/
+build/
+
+# Local source archive
+FleetFlow_Source.zip

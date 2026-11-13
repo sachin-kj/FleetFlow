@@ -1,0 +1,1 @@
+export default { content: ["./index.html", "./src/**/*.{js,jsx}"], theme: { extend: { fontFamily: { sans: ["DM Sans", "sans-serif"], display: ["Manrope", "sans-serif"] }, colors: { ink: "#101828", navy: "#101B33", accent: "#356DF3" } } }, plugins: [] };

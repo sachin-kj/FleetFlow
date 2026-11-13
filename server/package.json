@@ -1,0 +1,35 @@
+{
+  "name": "fleetflow-server",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "node src/server.js",
+    "start": "node src/server.js",
+    "worker": "node src/workers/notificationWorker.js",
+    "seed": "node src/seed.js",
+    "test": "node src/tests/phase1-rbac.test.js && node src/tests/phase2-lifecycle.test.js && node src/tests/phase3-assignment.test.js && node src/tests/phase4-breakdown.test.js && node src/tests/phase5-telemetry.test.js && node src/tests/phase6-bullmq.test.js && node src/tests/phase7-analytics.test.js && node src/test.js",
+    "test:rbac": "node src/tests/phase1-rbac.test.js",
+    "test:lifecycle": "node src/tests/phase2-lifecycle.test.js",
+    "test:assignment": "node src/tests/phase3-assignment.test.js",
+    "test:breakdown": "node src/tests/phase4-breakdown.test.js",
+    "test:telemetry": "node src/tests/phase5-telemetry.test.js",
+    "test:bullmq": "node src/tests/phase6-bullmq.test.js",
+    "test:analytics": "node src/tests/phase7-analytics.test.js"
+  },
+  "dependencies": {
+    "@socket.io/redis-adapter": "^8.3.0",
+    "bcryptjs": "^2.4.3",
+    "bullmq": "^5.12.12",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "ioredis": "^5.4.1",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.5.1",
+    "redis": "^6.3.1",
+    "socket.io": "^4.7.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}
